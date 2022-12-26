@@ -3,7 +3,6 @@ let mX, mY
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(0);
   mX = windowWidth / 2;
   mY = windowHeight / 2;
 }
@@ -15,7 +14,7 @@ function draw() {
   let mm = map(mX, 0, width, 1, 5);
   noStroke();
   for (let a = 0; a < 5.5; a += 0.0004) {
-    fill(0);  
+    fill(200/a);  
     let x = a*10000;
     let y = cos(a) / sin(t/x);
     let e = cos(x)/a;

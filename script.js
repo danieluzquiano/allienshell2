@@ -10,7 +10,7 @@ function setup() {
 function draw() {
   background(255);
   translate(width / 2, height / 2);
-  scale(165);
+  scale(215);
   let mm = map(mX, 0, width, 1, 5);
   noStroke();
   for (let a = 0; a < 5.5; a += 0.0004) {

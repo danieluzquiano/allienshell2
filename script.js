@@ -15,7 +15,7 @@ setup=_=>{createCanvas(w=windowWidth,h=windowHeight),noiseSeed(fxrand()*999999)}
     x=1e4*a,
     y=cos(a)/sin(t/x),
     e=cos(x)%a,
-    f=2.5*noise(tan(e)),
+    f=noise(tan(e))*a,
     circle(sin(tan(cos(y))+n)*f*e,sin(tan(sin(y))+t)*f,.012);
     t += .03
   }; //#つぶやきProcessing
